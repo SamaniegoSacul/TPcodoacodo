@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/utils/favicon.png">
+    <link rel="icon" type="image/png" href="utils/favicon.png">
     <title>TP CAC</title>
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,25 +23,25 @@
         <ul class="navUl">
 
             <li class="navLi">
-                <a class="navA" href="">
+                <a class="navA" href="#sectionMlbb">
                     Mlbb
                 </a>
             </li>
 
             <li class="navLi">
-                <a class="navA" href="">
+                <a class="navA" href="#sectionRoles">
                     Roles
                 </a>
             </li>
 
             <li class="navLi">
-                <a class="navA" href="">
+                <a class="navA" href="#sectionMapa">
                     Mapa
                 </a>
             </li>
 
             <li class="navLi">
-                <a class="navA" href="">
+                <a class="navA" href="#sectionTienda">
                     Tienda
                 </a>
             </li>
@@ -51,28 +51,134 @@
     </nav>
 
     <div class="banner">
-        <div id="carrouselBanner" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/utils/banner1.png" class="d-block w-75 m-auto" alt="...">
+        <img id="imgBanner" class="imgBanner" src="utils/banner1.png" alt="Imagenes banner">
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-top: -2px;">
+        <path fill="#3C1AE8" fill-opacity="1"
+            d="M0,192L48,202.7C96,213,192,235,288,218.7C384,203,480,149,576,138.7C672,128,768,160,864,149.3C960,139,1056,85,1152,74.7C1248,64,1344,96,1392,112L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+        </path>
+    </svg>
+
+    <main class="main">
+
+        <section class="section" id="sectionMlbb">
+            <h1 class="sectionTitle">
+                MLBB:
+            </h1>
+            <div class="card text-bg-light mb-3" id="cardMlbb">
+                <div class="card-body" id="cardBodyMlbb">
+                    <p class="textCard">
+                        Es un juego multijugador online (MOBA) desarrollado y publicado por Moonton, una filial de
+                        ByteDance
+                        Lanzado en 2016, el juego se ha vuelto popular en el sureste de Asia y fue uno de los juegos
+                        seleccionados para el primer evento con medallas de Esports en los Juegos del Sudeste
+                        Asiático 2019
+                        desarrollado en Filipinas. <br>
+                        Su temática es similar a los juegos en PC como LoL o Dota, pero adaptado a dispositivos
+                        móviles. Se
+                        caracteriza por una gran comunidad donde pueden jugar online 5 vs 5 jugadores de distintos
+                        países.
+                        El
+                        juego consta de elegir un heroe/personaje donde cada heroe puede desempeñar un rol en
+                        particular ya
+                        sea "combatiente,mago,tanque,adc,asesino" (Estos roles de los heroes no son absolutos,
+                        pueden mutar
+                        o
+                        modificar su uso segun el usuario en que posición lo quieran utilizar dentro del juego, ya
+                        sea por
+                        conveniencia o trollear XD)
+                    </p>
+                    <div class="imgCard">
+                        <img src="utils/playMlbb.gif" alt="jugando mlbb" style="width: 80%;">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="/utils/banner2.png" class="d-block w-75 m-auto" alt="...">
+
+        </section>
+
+        <section class="section" id="sectionRoles">
+
+            <h1 class="sectionTitle">
+                Roles
+            </h1>
+
+            <div class="card text-bg-light mb-3" id="cardRoles">
+                <div class="card-body">
+                    <p>
+                        <span class="subtitulo"> <i class="fa-solid fa-hand-fist"></i> Top Line: </span>Es una posición
+                        solitaria, se juega en
+                        la línea superior del mapa y generalmente deben estar apartados del equipo. En generalmente
+                        son combatientes con gran capacidad de sobrevivir a gankeos y buen desempeño en el 1 vs 1.
+                    </p>
+
+                    <p>
+                        <span class="subtitulo"><i class="fa-solid fa-hat-wizard"></i> Mid line: </span>Los midlaners
+                        suelen ser campeones tipo magos con un
+                        gran daño magico
+                        Son heroes con poca capacidad de resistencia pero poseen un gran daño de area que favorece las
+                        team fight
+                    </p>
+                    <p><span class="subtitulo"><i class="fa-solid fa-person-rifle"></i> Bot line-Adc: </span> se trata
+                        de un personaje capaz de realizar mucho
+                        daño pero sin apenas
+                        habilidades de supervivencia. Su desempeño se basa en su capacidad de farmeo y el juego tardio
+
+                    </p>
+                    <p><span class="subtitulo"><i class="fa-solid fa-user-ninja"></i> JG-asesino: </span>Se considera
+                        una posición similar a ir a un carril
+                        pero que involucra
+                        matar a los "Monstruos" neutrales localizados en las zonas entre las líneas. Es el responsable
+                        de garantizar los objetivos.
+                    </p>
+                    <p><span class="subtitulo"><i class="fa-solid fa-hand-holding-medical"></i> Roamer-Tanque-Support:
+                        </span> son campeones de combate cuerpo a cuerpo
+                        que sacrifican el
+                        daño a cambio de un poderoso control de masas. Tienen que prestar atencion al mapa,objetivos y
+                        otorgar vision sobre los enemigos.
+                    </p>
                 </div>
-                <div class="carousel-item">
-                    <img src="/utils/banner3.png" class="d-block w-75 m-auto" alt="...">
+
+        </section>
+
+        <section class="section" id="sectionMapa">
+            <h1 class="sectionTitle">Mapa</h1>
+            <div class="card text-bg-light mb-3" id="cardRoles">
+                <div class="card-body">
+                    <img src="utils/mapa.jpg" alt="Mapa" style="width: 100%;">
+                    <p>Es una herramienta fundamental para el juego, donde se reflejan las torres, da visión de
+                        posicionamiento de personajes aliados como enemigos, sirve para dar alertas y tener una vision
+                        general del estado de los carriles y sus torres</p>
+                </div>
+
+        </section>
+
+        <section class="section" id="sectionTienda">
+            <h1 class="sectionTitle">Tienda</h1>
+            <div class="card text-bg-light mb-3" id="cardRoles">
+                <div class="card-body" style="display:flex;justify-content:center;flex-direction: column;">
+
+                    <h4>Daño fisico: </h4>
+                    <img src="utils/Items1.png" alt="Items" style="width: 80%; margin: auto;">
+                    <p style="text-align: center;">
+                        Son items que se compran para aumentar el daño. Se los equipa a los heroes de tipo combatiente y
+                        adc generalmente</p>
+
+                    <h4>Daño magico: </h4>
+                    <img src="utils/Items2.png" alt="Items" style="width: 80%; margin: auto;">
+                    <p style="text-align: center;">
+                        Son items que se compran para aumentar el daño. Se los equipa "exclusivamente" a los heroes de rol mago
+
+                        <h4>Defensa: </h4>
+                    <img src="utils/item3.png" alt="Items" style="width: 80%; margin: auto;">
+                    <p style="text-align: center;">
+                        Son items que se compran para aumentar la defensa contra el daño del tipo físico o magico.
+
+                    </p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carrouselBanner" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carrouselBanner" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
+        </section>
+
+    </main>
 
 
 
@@ -80,7 +186,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ce1f10009b.js" crossorigin="anonymous"></script>
     <script src="/index.js"></script>
+
 </body>
 
 </html>

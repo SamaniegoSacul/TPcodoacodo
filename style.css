@@ -7,22 +7,35 @@
 
 :root {
     --font-w: #ffffff;
+    --font-b: #000000;
     --first: #293FFF;
     --second: #1A65E8;
     --thirth: #1CAAFF;
     --fourth: #3C1AE8;
     --fifth: #801CFF;
+    --sixth: #200346;
+}
+
+body{
+    width: 100vw;
+}
+
+p{
+    margin-top: 0.5rem;
 }
 
 /* Barra de navegación */
 
-.navBar{
+.navBar {
+    position: fixed;
+    inset: 0 0;
+    z-index: 20;
     background-color: var(--first);
-    width: 100vw; 
+    width: 100vw;
     height: 4rem;
 }
 
-.navUl{
+.navUl {
     width: 95%;
     height: 100%;
     margin: auto;
@@ -32,7 +45,7 @@
     padding: 0;
 }
 
-.navLi{
+.navLi {
     list-style: none;
     width: 100%;
     height: 100%;
@@ -41,19 +54,19 @@
     align-items: center;
 }
 
-.navA{
+.navA {
     text-decoration: none;
     color: var(--font-w);
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     transition: all .6s;
 }
 
-.navA:hover{
-    background-color:var(--second);
+.navA:hover {
+    background-color: var(--second);
     font-weight: bold;
 }
 
@@ -62,16 +75,103 @@
 /*banner*/
 
 .banner{
+    margin-top: 4rem;
+    background-image: linear-gradient(var(--fifth), var(--fourth));
+    height: calc(100vw / 100vh)*100;
     width: 100vw;
-    height: calc(100vw/100vh)*85;
-    background-image: linear-gradient(var(--fifth),var(--fourth));
-}
-
-#carrouselBanner{
-    width: 95%;
-    margin: auto;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.imgBanner{
+    width: 65%;
+    margin: auto;
+    transition:  opacity .5s;
+}
+
+.hidden{
+    width: 65%;
+    opacity: 0;
+}
+
+/* Fin Banner */
+
+/* Main */
+
+.main {
+    width: 100vw;
+    min-height: 60vh;
+}
+
+/* fin del main */
+
+/* Section */
+
+.section {
+    min-height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Fin Section */
+
+/* Section Title */
+
+.sectionTitle {
+    width: 95%;
+    margin: auto;
+    color: var(--font-b);
+    text-align: start;
+    padding: 2rem 0;
+}
+
+/* Fin section title*/
+
+/*card mlbb*/
+
+#cardMlbb {
+    width: 95%;
+    margin: auto;
+}
+
+/* Fin card mlbb */
+
+/* Card body Mlbb */
+
+#cardBodyMlbb {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+}
+
+.textCard{
+    width: 95%;
+    text-align: start;
+}
+
+.imgCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgCard img{
+    border-radius: 2rem;
+}
+
+/* Fin Card body Mlbb */
+/* CardRoles */
+#cardRoles{
+    width: 95%;
+    margin: auto;
+}
+.subtitulo{
+    font-size: 1.3rem;
+    font-weight: bold;
 
 }
